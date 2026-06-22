@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead By Daylight Tienda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-main: #000000; --bg-secondary: #121212; --dbd-red: #da292a; --text-main: #ffffff; --border-color: #2a2a2a; --gold: #f1c40f; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg-main); color: var(--text-main); font-family: 'Roboto', sans-serif; }
+        
+        header { border-bottom: 1px solid var(--border-color); padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; }
+        .logo-box { display: flex; align-items: center; gap: 15px; }
+        .logo-img { height: 45px; filter: invert(1); }
+        .logo-text { font-family: 'Oswald'; font-size: 24px; text-transform: uppercase; }
+        .nav-menu { display: flex; gap: 20px; align-items: center; }
+        .nav-menu a { color: white; text-decoration: none; text-transform: uppercase; font-weight: bold; font-family: 'Oswald'; }
+        
+        .hero { height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/Thetrapper7000.png/revision/latest/scale-to-width-down/250?cb=20160701014616'); background-size: cover; background-position: center 20%; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero h1 { font-family: 'Oswald'; font-size: 60px; text-transform: uppercase; }
+
+        .main-content { max-width: 1400px; margin: 0 auto; padding: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 25px; margin-bottom: 50px; }
+        .product-card { border: 1px solid var(--border-color); padding: 15px; text-align: center; }
+        .btn-cart { background: var(--dbd-red); border: none; padding: 10px; cursor: pointer; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin: 10px auto 0; }
+        
+        .academic-section { max-width: 1400px; margin: 50px auto; padding: 40px; border-top: 4px solid var(--dbd-red); }
+        .academic-title { color: var(--dbd-red); font-family: 'Oswald'; font-size: 28px; text-transform: uppercase; margin-bottom: 20px; }
+        .code-block { background: #000; padding: 25px; border: 1px solid #333; font-family: 'Courier New', monospace; color: #a6e22e; line-height: 1.6; white-space: pre-wrap; font-size: 16px; }
+        .footer-note { text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #333; color: #888; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <img src="https://sw6.elbenwald.de/media/8e/11/4d/1642163926/E1069214_3.jpg" alt="Logo" class="logo-img">
+            <span class="logo-text">DEAD BY DAYLIGHT TIENDA</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#">Asesinos</a>
+            <a href="#">Supervivientes</a>
+            <a href="#">🛒</a>
+        </nav>
+    </header>
+
+    <div class="hero"><h1>Descubre el Terror</h1></div>
+
+    <main class="main-content">
+        <h2>Asesinos</h2>
+        <div class="grid" style="margin-top: 20px;">
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0d/K02_charSelect_portrait.png/revision/latest?cb=20230705190257" style="width:100%"><h3>El Espectro</h3><p style="color: #2ecc71;">Gratis</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/04/K05_charSelect_portrait.png/revision/latest?cb=20230830211938" style="width:100%"><h3>Michael Myers</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b4/K06_charSelect_portrait.png/revision/latest?cb=20230705190017" style="width:100%"><h3>La Bruja</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a3/K03_charSelect_portrait.png/revision/latest?cb=20230705190303" style="width:100%"><h3>El Pueblerino</h3><p style="color: #2ecc71;">Gratis</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/K04_charSelect_portrait.png/revision/latest?cb=20230705185442" style="width:100%"><h3>La Enfermera</h3><p style="color: #2ecc71;">Gratis</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://deadbydaylight.wiki.gg/images/8/83/K12_charSelect_portrait.png" style="width:100%"><h3>El Payaso</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/dead_by_daylight_fannon/images/4/41/Jason.png/revision/latest?cb=20200428154257&path-prefix=es" style="width:100%"><h3>Jason Voorhees</h3><p style="color: #f1c40f;">◈ 1080 Células</p><button class="btn-cart">🛒</button></div>
+        </div>
+
+        <h2>Supervivientes</h2>
+        <div class="grid" style="margin-top: 20px;">
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/S09_charSelect_portrait.png/revision/latest?cb=20230725191813" style="width:100%"><h3>Feng Min</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/19/S13_charSelect_portrait.png/revision/latest?cb=20230705192155" style="width:100%"><h3>Kate Denson</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d7/S16_charSelect_portrait.png/revision/latest?cb=20230725192359" style="width:100%"><h3>Jane Romero</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/S25_charSelect_portrait.png/revision/latest?cb=20230705194144" style="width:100%"><h3>Yun-Jin Lee</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/S27_charSelect_portrait.png/revision/latest?cb=20230705184450" style="width:100%"><h3>Leon Kennedy</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+            <div class="product-card"><img src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2e/S23_charSelect_portrait.png/revision/latest?cb=20230705194042" style="width:100%"><h3>Felix Richter</h3><p style="color: #f1c40f;">◈ 500 Células</p><button class="btn-cart">🛒</button></div>
+        </div>
+    </main>
+
+    <section class="academic-section">
+        <h2 class="academic-title">Diseño de la App: Registro de Datos</h2>
+        <div class="code-block">
+Registro ProductoDBD
+    ID_Articulo: Cadena // CLAVE PRINCIPAL
+    Nombre_Articulo: Cadena
+    Tipo_Categoria: Cadena
+    Es_Licencia: Lógico
+    Precio_Celulas: Entero
+    Precio_Fragmentos: Entero
+Fin Registro</div>
+        <p style="margin-top:20px;"><strong>Justificación de la Clave:</strong> Se eligió ID_Articulo como clave principal porque en un e-commerce es indispensable contar con un identificador único, irrepetible y alfanumérico para cada producto. Esto evita confusiones en la base de datos (por ejemplo, diferenciar entre el personaje "Leon S. Kennedy" y un cosmético o suéter que lleve el mismo nombre) garantizando que las transacciones sean exactas.</p>
+    </section>
+
+    <footer class="footer-note">
+        <h3>Dead By Daylight Tienda - Diseño Académico</h3>
+        <p>Este es un proyecto para fines educativos. No está afiliado a Behaviour Interactive (ojalá).</p>
+    </footer>
+
+</body>
+</html>
